@@ -1,0 +1,30 @@
+<div class="<%= controller.action_name %>">  
+  <% if controller.action_name == 'compose' %>
+    <div style="float: right"><%= link_to "Visualiser", article_by_slug_url(@article.server_path), :class => "btn btn-primary",  %></div>
+  <% else %>
+    <div style="float: right"><%= render :partial => 'article_options', :locals => {:article => @article} %></div>
+  <% end %>
+
+  <h2><%= @article.try(:title_article) %></h2>
+
+  <div style="text-align: center; ">
+    <%= "Création : #{l @article.date_creation.to_date}" if @article.date_creation? %>
+    <%= "• Mise à jour : #{l @article.date_update.to_date}" if @article.date_update? && @article.date_update > @article.date_creation  %>
+  </div>
+
+  <div style="padding: 30px 60px 30px 60px">
+    <%= content_tag :div, :class => "alert alert-success", :style => "margin: 0 auto" do %>
+      <%= content_tag :div, :style => 'float: right' do %>
+        <%= link_to "Editer", edit_article_path(@article, :anchor => 'synopsis'), :class => "btn btn-success" %>
+      <% end if controller.action_name == "compose" %>
+      <strong>Synopsis !</strong><br />
+      <%= sanitize(@article.synopsis) %>
+    <% end %>
+  </div>
+
+  <%= summarize(@article) unless @article.no_html_summary %>
+
+  <%= render :partial => 'list_sections', :locals => {:node => @article} %>
+
+  <%= render :partial => 'suggest_adding_section', :locals => {:article => @article, :section_id => nil} if controller.action_name == "compose" %>
+</div>

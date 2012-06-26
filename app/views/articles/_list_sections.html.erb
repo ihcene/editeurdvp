@@ -1,0 +1,15 @@
+<% node.subsections.each do |section| %>
+  <section id="section<%= section.id %>">
+    <%= content_tag :div, :class => "btn-group", :style => "float: right" do %>
+      <%= link_to "Editer", edit_article_section_path(section.article, section), :class => "btn btn-success" %>
+    <% end if controller.action_name == "compose" %>
+    <h1><%= section.title %></h1>
+    
+    <div class="body">
+      <%= sanitize(section.content) %>
+    </div>
+    
+    <%= render :partial => 'list_sections', :locals => {:node => section} if section.subsections.length > 0 %>
+    <%= render :partial => 'suggest_adding_section', :locals => {:article => section.article, :section_id => section.id} if controller.action_name == "compose" %>
+  </section>
+<% end %>

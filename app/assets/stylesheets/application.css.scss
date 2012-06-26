@@ -1,0 +1,70 @@
+@import "bootstrap";
+@import "articles";
+@import "sections";
+@import "bootstrap-wysihtml5";
+
+body{
+  background-color: #F1F1F1;
+ 
+  margin: 0;
+  padding: 0;
+ 
+  width: 100%;
+}
+
+h1, h2, h3, h4, btn{
+  font-family: Gill Sans, My Gill Sans, "Trebuchet MS", Verdana, "Lucida Grande", Tahoma, Helvetica, Sans-Serif;
+}
+
+#page{
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgb(230, 230, 230);
+  box-shadow: 0px 0px 5px 5px rgb(230, 230, 230);
+  width: 90%;
+  min-height: 800px;
+
+  margin: 0 auto;
+}
+
+a{
+  color: #036;
+  text-decoration: none;
+
+	&:hover{
+	  color: #f89406;
+	  text-decoration: none;
+	}
+}
+
+#content{
+	padding: 10px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+h1.logo{
+  margin-top: 0;
+
+	text-align: center;
+	
+	img{
+		vertical-align: middle;
+	}
+}
+
+form{
+	label{
+		&:after{
+			content: (' : ')
+		}
+	}
+}
+ 
+.others{
+  text-align: center;
+}
+
+textarea{
+	width: 548px;
+	height: 250px;
+}

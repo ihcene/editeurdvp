@@ -1,0 +1,53 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+section{
+	padding: 5px;
+	margin: 5px 0 5px 20px;
+
+	h1{
+		font-size: 120%;
+	}
+}
+
+.compose{
+	section{
+		border-radius: 10px;
+		border: 1px dashed #E6E6E6;
+	
+		background-color: rgba(255, 255, 0, .05);
+	}
+}
+
+.show_by_slug{
+	section{
+		margin-top: 30px;
+	}
+	
+	section a{
+		font-weight: bold;
+	}
+	
+	section h1{
+		background-color: #274E9C;
+		line-height: 15px;
+		color: white;
+		padding: 3px;
+		font-size: 120%;
+	}
+
+		section section h1{
+			background-color: #2076BD;
+			font-size: 110%;
+		}
+
+			section section section h1{
+				background-color: #6389D8;
+				font-size: 100%;
+			}
+}
+
+

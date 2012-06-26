@@ -1,0 +1,17 @@
+<h2>Créer un nouvel article</h2>
+
+<%= form_for Article.new(params[:article]), :html => {:class => "form-horizontal"} do |f| %>
+  <% if @article.errors.any? -%>
+    <div class="alert alert-error">  
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <%= @article.errors.full_messages.to_sentence %>
+    </div>
+  <% end %>
+
+<%= render :partial => 'common_fields', :locals => {:f => f} %>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn-primary">Insérer</button>
+    <%= link_to "Annuler", articles_path, :class => "btn" %>
+  </div>
+<% end %>

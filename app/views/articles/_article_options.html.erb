@@ -1,0 +1,16 @@
+<div class="btn-group">
+  <%= link_to compose_article_path(article), :class => 'btn btn-danger' do %><i class="icon-edit icon-white"></i>&nbsp; Rédiger<% end %>
+  <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><%= link_to "Editer les informations", edit_article_path(article) %></li>
+    <li><%= link_to "Réorganiser le plan", summarize_article_path(article) %></li>
+    <li><a href="#">Gérer les fichiers médias</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Historique des modifications</a></li>
+    <li class="divider"></li>
+    <li><%= link_to "Télécharger au format XML", article_path(article, :format => :xml) %></li>
+    <li><a href="#">Lancer la génération</a></li>
+  </ul>
+</div>

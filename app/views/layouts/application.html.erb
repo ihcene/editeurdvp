@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developpez</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="page">
+    <div id="content">
+      <p class="alert">
+        Ceci est le prototype d'une proposition de réforme du fonctionnement de la publication sur Developpez ! Son but est de proposer une alternative plus robuste et plus compétitive que l'édition des fichiers XML, pénible et contre-productive avec ou sans les différents éditeurs existants.<br /><br />
+        Cette solution n'abandonne pas le XML mais au lieu de tout basé autour de cette technologie rigide et en perte de popularité, elle génère à partir de la base de données des fichiers XML 100 % compatibles avec le Kit en vue des différentes transformations qui font la force du XML.
+      </p>
+      
+      <h1 class="logo"><a href="<%= root_path %>"><img src="<%= asset_path 'logo.png' %>" alt="Developpez">Developpez.com</a></h1>
+    
+      <%= yield %>
+      
+      &nbsp;
+    </div>
+  </div>
+</body>
+</html>

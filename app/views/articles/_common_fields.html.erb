@@ -1,0 +1,139 @@
+  <fieldset>
+    <legend>Informations principales</legend>
+    
+    <div class="control-group">
+      <%= f.label :column, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.select :column_id, Column::ALL, :include_blank => true %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= f.label :title_page, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :title_page %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= f.label :title_article, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :title_article %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :server_path, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :server_path, :placeholder => "cours/introduction-programmation" %>
+        
+        <p class="help-block"><strong>Note :</strong> Ce champ n'accepte que les caractères alphanumériques, tirets et des slashs séparateurs (au milieu de la chaine, ni au début, ni à la fin).</p>
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <legend></legend>
+    
+    <div id="synopsis" class="control-group">
+      <%= f.label :synopsis, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :synopsis, :rows => 6 %>
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Dates</legend>
+    
+    <div class="control-group">
+      <%= f.label :date_creation, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.date_select :date_creation, {:include_blank => true}, :class => 'input-mini' %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= f.label :date_update, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.date_select :date_update, {:include_blank => true}, :class => 'input-mini' %>
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Balises méta</legend>
+    
+    <div class="control-group">
+      <%= f.label :meta_keywords, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :meta_keywords %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= f.label :meta_description, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :meta_description, :rows => 3 %>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Options</legend>
+
+    <div class="control-group">
+      <%= f.label :no_html_summary, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :no_html_summary %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= f.label :no_html_zip, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :no_html_zip %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :no_ebook, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :no_ebook %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :no_pdf, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :no_pdf %>
+      </div>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Licence</legend>
+    
+    <div class="control-group">
+      <%= f.label :licence_author, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :licence_author %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= f.label :licence_year_start, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.number_field :licence_year_start, :class => "input-mini" %> 
+        ~
+        <%= f.number_field :licence_year_end, :class => "input-mini" %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :licence_type, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.select :licence_type, Article::LicenceTypes.invert %>
+      </div>
+    </div>
+  </fieldset>

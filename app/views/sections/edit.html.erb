@@ -1,0 +1,35 @@
+<h2>
+  <small><%= @section.article.title %></small> <br />
+  Editer la section « <em><%= @section.title %> »</em>
+</h2>
+
+<%= form_for [@section.article, @section], :html => {:class => "form-horizontal"} do |f| %>
+  <fieldset>
+    <legend></legend>
+    <% if @section.errors.any? -%>
+      <div class="alert alert-error">  
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <%= @section.errors.full_messages.to_sentence %>
+      </div>
+    <% end %>
+  
+    <div class="control-group">
+      <%= f.label :title, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :title %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :content, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :content, :rows => 5 %>
+      </div>
+    </div>
+  
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Enregistrer</button>
+      <%= link_to "Annuler", article_by_slug_url(@section.article.server_path, :anchor => "section#{@section.id}"), :class => "btn" %>
+    </div>
+  </fieldset>
+<% end %>

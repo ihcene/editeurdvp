@@ -1,0 +1,7 @@
+<section>
+  <%= form_for [article, article.sections.new], :html => {:class => "form-search" } do |f| %>
+    <%= f.hidden_field  :parent_id, :value => section_id %>
+    <%= f.text_field    :title, :class => 'input-xlarge', :placeholder => 'Un titre...' %>
+    <%= f.submit        "Créer une nouvelle section ici", :class => 'btn' %>
+  <% end %>
+</section>
