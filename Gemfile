@@ -2,13 +2,15 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 
+
+group :test, :development do
+  gem 'sqlite3'
+end
+
 group :production do
   # gems specifically for Heroku
   gem "pg"
 end
-
-gem 'sqlite3'
-
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
