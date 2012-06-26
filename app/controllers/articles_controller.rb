@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
   def show_by_slug
     @article = Article.find_by_server_path params[:slug]
     
-    render :action => 'show'
+    render :action => 'show', :layout => 'gabarit'
   end
   
   def new

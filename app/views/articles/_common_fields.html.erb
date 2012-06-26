@@ -38,7 +38,7 @@
     <div id="synopsis" class="control-group">
       <%= f.label :synopsis, :class => 'control-label' %>
       <div class="controls">
-        <%= f.text_area :synopsis, :rows => 6 %>
+        <%= f.text_area :synopsis, :rows => 6, :class => "wysiwyg"  %>
       </div>
     </div>
   </fieldset>
@@ -113,6 +113,13 @@
   
   <fieldset>
     <legend>Licence</legend>
+
+    <div class="control-group">
+      <%= f.label :licence_type, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.select :licence_type, Article::LicenceTypes.invert %>
+      </div>
+    </div>
     
     <div class="control-group">
       <%= f.label :licence_author, :class => 'control-label' %>
@@ -127,13 +134,6 @@
         <%= f.number_field :licence_year_start, :class => "input-mini" %> 
         ~
         <%= f.number_field :licence_year_end, :class => "input-mini" %>
-      </div>
-    </div>
-
-    <div class="control-group">
-      <%= f.label :licence_type, :class => 'control-label' %>
-      <div class="controls">
-        <%= f.select :licence_type, Article::LicenceTypes.invert %>
       </div>
     </div>
   </fieldset>

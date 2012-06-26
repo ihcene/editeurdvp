@@ -1,0 +1,407 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+	<title>Developpez.com, le club des décideurs et professionnels en Informatique</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="generator" content="developpez-com" />
+	<meta name="description" content="Club des professionnels en informatique : Forum, Cours et tutoriels : Delphi, C, C++, Java, VB, DotNET, C#, PHP, ASP, UML" />
+	<meta name="keywords" content="programmation, tutoriels, tutoriel, cours, forum, delphi, langage C, C++, Java, VB, DotNET, C#, Pascal, PHP, ASP, UML, XML" />
+	<meta name="MS.LOCALE" content="fr-FR" />
+	
+	<script type="text/javascript" src="http://www.developpez.com/template/scripts/jquery-1.7.2.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.developpez.com/template/favicon.ico" />
+	<link rel="image_src" href="http://www.developpez.com/facebook-icon.png" />
+
+	<link rel="stylesheet" type="text/css" href="http://www.developpez.com/template/gabarit0.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="http://www.developpez.com/template/printer.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.developpez.com/public/css/index2.css" />
+	
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 Developpez.com : Developpez.com, le club des décideurs et professionnels en Informatique" href="http://www.developpez.com/rss.php" />
+	<link rel="alternate" type="application/rss+xml" title="Atom 1.0 Developpez.com : Developpez.com, le club des décideurs et professionnels en Informatique" href="http://www.developpez.com/atom.php" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+</head>
+<body xml:lang="fr"><div id="quicknav">
+	<div id="quicksearch">
+		<form method="get" action="http://www.developpez.com/recherche/" id="cse-search-box">
+			<p>
+				<input type="text" name="q" id="recherche_g" />
+				<input type="image" name="sa" id="recherche_submit" value="Go" title="Rechercher" src="http://www.developpez.com/template/images/go-gray.png"http://www.developpez.com/>
+				<input type="hidden" name="cx" value="006424388311999799839:-31tnf0iuqy" />
+				<input type="hidden" name="cof" value="FORID:9" />
+				<input type="hidden" name="ie" value="ISO-8859-1" />
+			</p>
+		</form>
+		<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=fr"></script>
+	</div>
+	<ul id="quicklinks">
+		<li class="first">
+			<a href="http://www.developpez.net/forums/" title="">Forums</a>
+		</li>
+		<li>
+			<a href="http://general.developpez.com/cours/" title="">Tutoriels</a>
+		</li>
+		<li>
+			<a href="http://magazine.developpez.com/" title="">Magazine</a>
+		</li>
+		<li>
+			<a href="http://general.developpez.com/faq/" title="">FAQs</a>
+		</li>
+		<li>
+			<a href="http://blog.developpez.com/" title="">Blogs</a>
+		</li>
+		<li>
+			<a href="http://projets.developpez.com/" title="">Projets</a>
+		</li>
+		<li>
+			<a href="http://chat.developpez.com/" title="">Chat</a>
+		</li>
+		<li>
+			<a href="http://www.developpez.com/newsletter/">Newsletter</a>
+		</li>
+		<li>
+			<a href="http://etudes.developpez.com/">Études</a>
+		</li>
+		<li>
+			<a href="http://emploi.developpez.com/" title="">Emploi</a>
+		</li>
+		<li>
+			<a href="http://club.developpez.com/">Club</a>
+		</li>
+		<li>
+			<a href="http://club.developpez.com/contacts/" title="">Contacts</a>
+		</li>
+	</ul>
+</div>
+<!--[if lt IE 7]>
+<script src="http://www.developpez.com/template/ie7/IE7.js" type="text/javascript"></script>
+<![endif]-->
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="http://www.developpez.com/template/gabarit-ie6.css" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://www.developpez.com/template/gabarit-ie7.css" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.developpez.com/template/gabarit-ie8.css" />
+<![endif]-->
+
+<div id="layout">
+	<div id="publicite">
+		<!-- BEGIN Hi-Media Media Settings - v1.0 -->
+<script type="text/javascript">
+<!--
+	var adlSite='developpez.com';
+	var adlZone='homepage';
+	var adlKv='';
+	var adlHasDcopt = false;
+	var adlPro=window.location.protocal=='https:'?'https:':'http:';
+	document.write('<'+'sc'+'ript type="text/javascript" src="'+adlPro+'//js.himediads.com/js?lang=fr&s='+adlSite+'&z='+adlZone+'&d='+Math.floor(Math.random()*10000000000)+'"><\/'+'sc'+'ript>');
+//-->
+</script>
+<!-- END Hi-Media Media Settings - v1.0 -->
+
+<!-- BEGIN Hi-Media Media AdTag, developpez.com 728x90 - v1.0 -->
+<div id="adl_728x90">
+	<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td valign="top" width="728" height="90">
+				<script type="text/javascript">if (typeof getAdLinkAdTag=='function') getAdLinkAdTag( '728x90' );</script>
+				<noscript>
+					<a href="http://rd.himediads.com/fr/jump/developpez.com/homepage;sz=728x90;tile=2;ord=" target="_blank"><img src="http://rd.himediads.com/fr/ad/developpez.com/homepage;sz=728x90;tile=2;ord=?" width="728" height="90" alt="" /></a>
+				</noscript>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- END Hi-Media Media AdTag, developpez.com 728x90 - v1.0 -->
+			</div>
+
+	<div id="logo_dvp">
+		<a href="/" title="Accueil Developpez.com">
+			<img src="http://www.developpez.com/template/images/logo.png" alt=""http://www.developpez.com/>
+		</a>
+	</div>
+
+<div id="gabarit"><div id="gabarit_tabmenu">
+	<div>&nbsp;</div>
+	<ul id="tabs">
+	<li class="item first">
+	
+	<a href="http://www.developpez.com" class="selected">
+		Accueil
+	<span class="tooltip">Actualités IT Pro</span>	</a>
+
+		</li>
+	<li class="item">
+	
+	<a href="http://conception.developpez.com">
+		Conception
+	<span class="tooltip">Cycle de vie du logiciel</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://conception.developpez.com">Conception</a></li>
+					<li>			<a href="http://uml.developpez.com">UML</a></li>
+					<li class="last">			<a href="http://merise.developpez.com">Merise</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://java.developpez.com">
+		Java
+	<span class="tooltip">Plateforme et langage Java</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://java.developpez.com">Java</a></li>
+					<li>			<a href="http://spring.developpez.com">Spring</a></li>
+					<li>			<a href="http://javaweb.developpez.com">Dév. Web Java</a></li>
+					<li>			<a href="http://android.developpez.com">Android</a></li>
+					<li>			<a href="http://eclipse.developpez.com">Eclipse</a></li>
+					<li class="last">			<a href="http://netbeans.developpez.com">NetBeans</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://dotnet.developpez.com">
+		.NET
+	<span class="tooltip">Microsoft Framework .NET</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://dotnet.developpez.com">Microsoft DotNET</a></li>
+					<li>			<a href="http://dotnet.developpez.com/visual-studio/">Visual Studio</a></li>
+					<li>			<a href="http://dotnet.developpez.com/aspnet/">ASP.NET</a></li>
+					<li>			<a href="http://dotnet.developpez.com/csharp/">C#</a></li>
+					<li>			<a href="http://dotnet.developpez.com/vbnet/">VB.NET</a></li>
+					<li>			<a href="http://windowsphone.developpez.com">Windows Phone</a></li>
+					<li class="last">			<a href="http://windows-azure.developpez.com">Windows Azure</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://web.developpez.com">
+		Dév. Web
+	<span class="tooltip">Développement Web et Webmarketing</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://web.developpez.com">Développement Web</a></li>
+					<li>			<a href="http://ajax.developpez.com">AJAX</a></li>
+					<li>			<a href="http://apache.developpez.com">Apache</a></li>
+					<li>			<a href="http://asp.developpez.com">ASP</a></li>
+					<li>			<a href="http://css.developpez.com">CSS</a></li>
+					<li>			<a href="http://flash.developpez.com">Flash / Flex</a></li>
+					<li>			<a href="http://javascript.developpez.com">JavaScript</a></li>
+					<li>			<a href="http://php.developpez.com">PHP</a></li>
+					<li>			<a href="http://ruby.developpez.com">Ruby &amp; Rails</a></li>
+					<li>			<a href="http://web-semantique.developpez.com">Web sémantique</a></li>
+					<li>			<a href="http://webmarketing.developpez.com">Webmarketing</a></li>
+					<li class="last">			<a href="http://xhtml.developpez.com">(X)HTML</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://general.developpez.com/edi/">
+		EDI
+	<span class="tooltip">Environnements de Développement Intégré</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://general.developpez.com/edi/">EDI</a></li>
+					<li>			<a href="http://4d.developpez.com">4D</a></li>
+					<li>			<a href="http://delphi.developpez.com">Delphi</a></li>
+					<li>			<a href="http://eclipse.developpez.com">Eclipse</a></li>
+					<li>			<a href="http://labview.developpez.com">LabVIEW</a></li>
+					<li>			<a href="http://netbeans.developpez.com">NetBeans</a></li>
+					<li>			<a href="http://matlab.developpez.com">MATLAB</a></li>
+					<li>			<a href="http://dotnet.developpez.com/visual-studio/">Visual Studio</a></li>
+					<li>			<a href="http://wind.developpez.com">WinDev</a></li>
+					<li>			<a href="http://vb.developpez.com">Visual Basic 6</a></li>
+					<li>			<a href="http://lazarus.developpez.com">Lazarus</a></li>
+					<li class="last">			<a href="http://qt-creator.developpez.com">Qt Creator</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://general.developpez.com/langages/">
+		Langages
+	<span class="tooltip">Langages de programmation applicatifs</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://general.developpez.com/langages/">Langages</a></li>
+					<li>			<a href="http://asm.developpez.com">Assembleur</a></li>
+					<li>			<a href="http://c.developpez.com">C</a></li>
+					<li>			<a href="http://cpp.developpez.com">C++</a></li>
+					<li>			<a href="http://dotnet.developpez.com/csharp/">C#</a></li>
+					<li>			<a href="http://pascal.developpez.com">Pascal</a></li>
+					<li>			<a href="http://perl.developpez.com">Perl</a></li>
+					<li>			<a href="http://python.developpez.com">Python</a></li>
+					<li>			<a href="http://vb.developpez.com">Visual Basic 6</a></li>
+					<li>			<a href="http://dotnet.developpez.com/vbnet/">VB.NET</a></li>
+					<li>			<a href="http://xml.developpez.com">XML</a></li>
+					<li class="last">			<a href="http://general.developpez.com/cours/">Autres</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://sgbd.developpez.com">
+		SGBD
+	<span class="tooltip">Systèmes de Gestion de Bases de Données</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://sgbd.developpez.com">SGBD &amp; SQL</a></li>
+					<li>			<a href="http://4d.developpez.com">4D</a></li>
+					<li>			<a href="http://access.developpez.com">Access</a></li>
+					<li>			<a href="http://db2.developpez.com">DB2</a></li>
+					<li>			<a href="http://firebird.developpez.com">Firebird</a></li>
+					<li>			<a href="http://interbase.developpez.com">InterBase</a></li>
+					<li>			<a href="http://mysql.developpez.com">MySQL</a></li>
+					<li>			<a href="http://oracle.developpez.com">Oracle</a></li>
+					<li>			<a href="http://postgresql.developpez.com">PostgreSQL</a></li>
+					<li>			<a href="http://sqlserver.developpez.com">SQL-Server</a></li>
+					<li class="last">			<a href="http://sybase.developpez.com">Sybase</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://office.developpez.com">
+		Office
+	<span class="tooltip">Bureautique pour l'entreprise</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://office.developpez.com">Microsoft Office</a></li>
+					<li>			<a href="http://access.developpez.com">Access</a></li>
+					<li>			<a href="http://excel.developpez.com">Excel</a></li>
+					<li>			<a href="http://word.developpez.com">Word</a></li>
+					<li>			<a href="http://outlook.developpez.com">Outlook</a></li>
+					<li>			<a href="http://powerpoint.developpez.com">PowerPoint</a></li>
+					<li>			<a href="http://sharepoint.developpez.com">SharePoint</a></li>
+					<li class="last">			<a href="http://project.developpez.com">Microsoft Project</a></li>
+		
+			</ul>	</li>
+	<li class="item">
+	
+	<a href="http://solutions-entreprise.developpez.com">
+		Solutions d&#039;entreprise
+	<span class="tooltip">Autres logiciels pour l'entreprise</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://solutions-entreprise.developpez.com">Solutions d&#039;entreprise</a></li>
+					<li>			<a href="http://business-intelligence.developpez.com">Business Intelligence</a></li>
+					<li>			<a href="http://solutions-entreprise.developpez.com/erp-pgi/presentation-erp-pgi/">ERP / PGI</a></li>
+					<li>			<a href="http://solutions-entreprise.developpez.com/crm-grc/presentation-crm-grc/">CRM</a></li>
+					<li>			<a href="http://sas.developpez.com">SAS</a></li>
+					<li>			<a href="http://cloud-computing.developpez.com">Cloud Computing</a></li>
+					<li class="last">			<a href="http://sap.developpez.com">SAP</a></li>
+		
+			</ul>	</li>
+	<li class="item prelast">
+	
+	<a href="http://applications.developpez.com">
+		Applications
+	<span class="tooltip">Applications logicielles</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://applications.developpez.com">Applications</a></li>
+					<li>			<a href="http://jeux.developpez.com">2D - 3D - Jeux</a></li>
+					<li class="last">			<a href="http://portail-projets.developpez.com">Projets</a></li>
+		
+			</ul>	</li>
+	<li class="item last">
+	
+	<a href="http://systeme.developpez.com">
+		Systèmes
+	<span class="tooltip">Logiciels et matériels systèmes</span>	</a>
+
+	<ul class="submenu">
+		<li><a href="http://systeme.developpez.com">Systèmes</a></li>
+					<li>			<a href="http://windows.developpez.com">Windows</a></li>
+					<li>			<a href="http://linux.developpez.com">Linux Professionnel</a></li>
+					<li>			<a href="http://securite.developpez.com">Sécurité</a></li>
+					<li>			<a href="http://hardware.developpez.com">PC</a></li>
+					<li>			<a href="http://mac.developpez.com">Mac</a></li>
+					<li>			<a href="http://reseau.developpez.com">Réseau</a></li>
+					<li>			<a href="http://mobiles.developpez.com">Mobiles</a></li>
+					<li>			<a href="http://green-it.developpez.com">Green IT</a></li>
+					<li class="last">			<a href="http://virtualisation.developpez.com">Virtualisation</a></li>
+		
+			</ul>	</li>
+	</ul>
+</div>
+
+
+<div id="gabarit_resourcemenu">
+	<div>&nbsp;</div>
+	<div id="facebook_bloc">
+		<a href="http://www.facebook.com/Developpez" target="_blank"><img src="http://www.developpez.com/template/images/facebook.png" alt="Facebook" title="Retrouver Developpez sur Facebook" /></a>
+	</div>
+	<div id="twitter_bloc">
+		<a href="http://twitter.com/Developpez" target="_blank"><img src="http://www.developpez.com/template/images/twitter.png" alt="Twitter" title="Retrouver Developpez sur Twitter" /></a>
+	</div>
+	<div id="rss_syndication">
+		<a href="http://www.developpez.com/index/rss" target="_blank"><img src="http://www.developpez.com/template/images/rss.png" alt="RSS" title="Flux RSS" /></a>
+	</div>
+	<ul id="resources">		<li><span><strong><a href="http://general.developpez.com/cours/">ARTICLES</a></strong></span></li>
+			<li><span><strong><a href="http://www.developpez.net/forums/calendar.php">CALENDRIER</a></strong></span></li>
+			<li><span><strong><a href="http://www.developpez.net/forums/f40/general-developpement/debats-developpement-best-of/">DEBATS</a></strong></span></li>
+			<li><span><strong><a href="http://humour.developpez.com">HUMOUR</a></strong></span></li>
+			<li><span><strong><a href="http://wiki.developpez.com">WIKI</a></strong></span></li>
+			<li><span><strong><a href="http://general.developpez.com/livres/">LIVRES</a></strong></span></li>
+			<li><span><strong><a href="http://general.developpez.com/faq/">F.A.Q</a></strong></span></li>
+			<li><span><strong><a href="http://www.developpez.com/telecharger/index/categorie/594/Codes-sources">SOURCES</a></strong></span></li>
+			<li><span><strong><a href="http://dico.developpez.com/">DICO</a></strong></span></li>
+			<li><span><strong><a href="http://www.developpez.com/telecharger/">TELECHARGEZ</a></strong></span></li>
+	</ul>
+</div></div>
+	<div id="shadow1">
+		<div id="shadow2">
+			<div class="contenuPage">
+    
+      <%= yield %>
+
+      </div>
+    </div>
+  </div>
+
+      <div id="gabarit_pied">
+      	<div id="gabarit_pied_right">&nbsp;</div>
+
+      	<div id="gabarit_pied_left">&nbsp;</div>
+
+      	<div id="gabarit_pied_contenu_superieur">
+      	<div id="gabarit_pied_contenu">
+      		<div class="gabarit_pied_div">
+      			<span>Developpez.com</span>
+      			<p><a href="http://club.developpez.com/contacts/">Nous contacter</a></p>
+      			<p><a href="http://www.developpez.com/participez/">Participez</a></p>
+      			<p><a href="http://www.developpez.com/legal/">Informations légales</a></p>
+      		</div>
+      		<div class="gabarit_pied_div_separation">&nbsp;</div>
+      		<div class="gabarit_pied_div">
+      			<span>Services</span>
+      			<p><a href="http://www.developpez.net/forums/" onclick="window.open(this.href); return false;">Forum d'entraide</a></p>
+      			<p><a href="http://blog.developpez.com/">Blogs</a></p>
+      			<p><a href="http://www.developpez.com/hebergement/">Hébergement</a></p>
+      		</div>
+      		<div class="gabarit_pied_div_separation">&nbsp;</div>
+      		<div class="gabarit_pied_div">
+      			<span>Partenaires</span>
+      			<p><a href="http://www.planethoster.net/" target="_blank">Hébergement Web</a></p>
+      		</div>
+      		<div style="clear: both;"></div>
+      		<div id="gabarit_pied_copyright">
+      			<p>Copyright &copy; 2000-2012 - www.developpez.com</p>
+      		</div>
+      	</div>
+      	</div>
+      </div>
+      <!-- End Piwik Tracking Code -->
+
+</body>
+</html>

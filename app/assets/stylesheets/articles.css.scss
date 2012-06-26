@@ -22,9 +22,17 @@ section{
 	}
 }
 
+
 .show_by_slug{
+	
+	font-size: 11px;
+	
 	section{
 		margin-top: 30px;
+		
+		a{
+			font-weight: bold;
+		}
 	}
 	
 	section a{
@@ -36,17 +44,19 @@ section{
 		line-height: 15px;
 		color: white;
 		padding: 3px;
-		font-size: 120%;
+		font-size: 150%;
+		
+		margin-bottom: 15px;
 	}
 
 		section section h1{
 			background-color: #2076BD;
-			font-size: 110%;
+			font-size: 130%;
 		}
 
 			section section section h1{
 				background-color: #6389D8;
-				font-size: 100%;
+				font-size: 115%;
 			}
 }
 

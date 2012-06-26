@@ -7,22 +7,21 @@
 
   <h2><%= @article.try(:title_article) %></h2>
 
-  <div style="text-align: center; ">
+  <div style="text-align: center; margin-top: 20px">
     <%= "Création : #{l @article.date_creation.to_date}" if @article.date_creation? %>
     <%= "• Mise à jour : #{l @article.date_update.to_date}" if @article.date_update? && @article.date_update > @article.date_creation  %>
   </div>
 
-  <div style="padding: 30px 60px 30px 60px">
-    <%= content_tag :div, :class => "alert alert-success", :style => "margin: 0 auto" do %>
+  <div style="padding: 30px 60px 30px 60px" class="synopsis">
+    <%= content_tag :div, :class => "alert alert-info", :style => "margin: 0 auto" do %>
       <%= content_tag :div, :style => 'float: right' do %>
         <%= link_to "Editer", edit_article_path(@article, :anchor => 'synopsis'), :class => "btn btn-success" %>
       <% end if controller.action_name == "compose" %>
-      <strong>Synopsis !</strong><br />
       <%= sanitize(@article.synopsis) %>
     <% end %>
   </div>
 
-  <%= summarize(@article) unless @article.no_html_summary %>
+  <div style="margin-left: 30px"><%= summarize(@article) unless @article.no_html_summary %></div>
 
   <%= render :partial => 'list_sections', :locals => {:node => @article} %>
 

@@ -3,13 +3,12 @@
 @import "sections";
 @import "bootstrap-wysihtml5";
 
-body{
-  background-color: #F1F1F1;
- 
-  margin: 0;
-  padding: 0;
- 
-  width: 100%;
+html body{
+  background-color: #E1E1E2;
+
+	button, btn{
+		height: 28px;
+	}
 }
 
 h1, h2, h3, h4, btn{

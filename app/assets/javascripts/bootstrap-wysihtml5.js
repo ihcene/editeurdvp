@@ -69,7 +69,7 @@
     };
 
     var defaultOptions = {
-        "font-styles": true,
+        "font-styles": false,
         "emphasis": true,
         "lists": true,
         "html": true,

@@ -185,8 +185,8 @@ fr:
       invalid: "n'est pas valide"
       confirmation: "ne concorde pas avec la confirmation"
       accepted: "doit être accepté(e)"
-      empty: "champ obligé"
-      blank: "champ obligé"
+      empty: "champ obligatoire"
+      blank: "champ obligatoire"
       too_long:
         one: "est trop long (pas plus d'un caractère)"
         other: "est trop long (pas plus de %{count} caractères)"
@@ -218,5 +218,23 @@ fr:
     errors:
       <<: *errors
   activerecord:
+    attributes:
+      article:
+        column:             "Rubrique"
+        title_page:         "Titre de la page"
+        title_article:      "Titre de l'article"
+        server_path:        "Chemin relatif"
+        date_creation:      "Date de création"
+        date_update:        "Date de MAJ"
+        meta_keywords:      "Mots-clés"
+        meta_description:   "Description"
+        no_html_summary:    "Pas de table des matières"
+        no_html_zip:        "Pas de fichier zip"
+        no_ebook:           "Pas de ebooks"
+        no_pdf:             "Pas de version PDF"
+        licence_author:     "Auteur"
+        licence_year_start: "Année(s)"
+        licence_type:       "Type"
+        
     errors:
       <<: *errors
