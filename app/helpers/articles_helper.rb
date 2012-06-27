@@ -46,7 +46,6 @@ module ArticlesHelper
       str.gsub!(k, v)
     end
     
-    
     # Exceptionnal : Close img tags
     str.gsub!(/(<image [^>]+)>/, '\1 />')
     
