@@ -14,8 +14,8 @@ xml.document do
       xml.article     @article.title_article
     end
     
-    xml.creation      @article.date_creation.to_date
-    xml.miseajour     @article.date_update.to_date
+    xml.creation      @article.date_creation.try :to_date
+    xml.miseajour     @article.date_update.try :to_date
     
     xml.licauteur     @article.licence_author
     xml.lictype       @article.licence_type
@@ -23,7 +23,7 @@ xml.document do
     
     xml.serveur       @article.column.try(:title)
     xml.chemin        "/#{@article.server_path}/"
-    xml.urlhttp       "http://#{@article.column.url}/#{@article.server_path}"
+    xml.urlhttp       "http://#{@article.column.try(:url)}/#{@article.server_path}"
     
     xml.nopdf         if @article.no_pdf
     xml.nozip         if @article.no_html_zip
