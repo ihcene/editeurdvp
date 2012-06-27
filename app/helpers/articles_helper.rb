@@ -27,6 +27,8 @@ module ArticlesHelper
   def xml_tranform(str)
     return "" if str.blank?
     transformations = {
+      '<a'    => '<link',
+      '</a>'  => '</link>',
       '<p'    => '<paragraph',
       '</p>'  => '</paragraph>',
       '<br>'  => '<br />',
@@ -34,15 +36,19 @@ module ArticlesHelper
       '</ol>' => '</liste>',
       '<ul'   => '<liste',
       '</ul>' => '</liste>',
-      '<li>'   => '<element>',
+      '<li>'  => '<element>',
       '</li>' => '</element>',
-      '<img' => '<image',
-      '&nbsp;' => ' '
+      '<img'  => '<image',
+      '&nbsp;'=> ' '
     }
     
     transformations.each_pair do |k, v|
       str.gsub!(k, v)
     end
+    
+    
+    # Exceptionnal : Close img tags
+    str.gsub!(/(<image [^>]+)>/, '\1 />')
     
     str
   end
